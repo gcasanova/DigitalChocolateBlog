@@ -1,0 +1,66 @@
+@import url('style.css');
+@import url('style_entries.css');
+
+div[id^="page"]{
+	position: absolute;
+	height: 500px;
+	width: 1000px;
+	padding: 20px 90px 20px 90px;
+	text-align: left;
+}
+div[id^="page"] p{
+	font-size: 13pt;
+	line-height: 1.2;
+}
+@-moz-document url-prefix(){
+     div[id^="page"] p {font-size: 12pt;}
+}
+.question {
+	font-weight: bold;
+	margin-bottom: 14px;
+	margin-top: 10px;
+}
+.question:first-letter{
+	padding-left: 6px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.pagination{
+	position: absolute;
+	bottom: 20px;
+	left: 558px;
+	z-index: 99;
+}
+#first_page{
+	width: 460px;
+}
+#third_page{
+	width: 460px;
+	float: right;
+}
+img[src*="poster"]{
+	position:absolute;
+	top: 60px;
+	border: 2px solid #555555;
+	padding: 5px;
+}
+.right_image{
+	left: 690px;
+}
+.left_image{
+	left: 180px;
+}
+div[class^="image_footer"]{
+	position:absolute;
+	bottom: 20px;
+}
+div[class^="image_footer"] p{
+	font-size: 11pt;
+	font-style: italic;
+}
+.image_footer_right{
+	left: 760px;
+}
+.image_footer_left{
+	left: 240px;
+}

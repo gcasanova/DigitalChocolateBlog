@@ -1,0 +1,105 @@
+<!doctype HTML>
+
+<html lang="en">
+
+<head>
+
+      <meta charset="utf-8">
+
+      <title>Digital Chocolate</title>
+
+      <link rel="stylesheet" href="css/style.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+      <script src="js/slides.min.jquery.js"></script>
+      <script src="js/mailencrypt.min.jquery.js"></script>
+
+      <!--[if IE]>
+      <script type="text/javascript">
+      (function(){
+      var html5elmeents = "address|article|aside|audio|canvas|command|datalist|details|dialog|figure|figcaption|footer|header|hgroup|keygen|mark|meter|menu|nav|progress|ruby|section|time|video".split('|');
+      for(var i = 0; i < html5elmeents.length; i++){
+      document.createElement(html5elmeents[i]);
+      }
+      }
+      )();
+      </script>
+      <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header-wrap">
+        <header>
+            <img id="line-decoration-top" src="images/frame.png" alt="line-decoration1" />
+            <h2><a href="index.html" title="digitalchocolatebcnblog">Digital Chocolate BCN-BLOG</a></h2>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="container">
+      <div id="slides">
+        <img src="images/blog.png" alt="Blog" />
+        <div class="slides_container">
+          <div>
+              <img src="images/galaxylife/gl_collage_01.png" alt="slide1" />
+            <div class="slide-left">
+              <h1 class="slide-heading">Galaxy Life - Chapter 01</h1>
+              <p class="info">It was in late 2011, specifically on November 11th, when one of our most anticipated games broke its silence...</p>
+              <p><a href="html/galaxylife_firstentry.html" class="readmore">read more</a></p>
+            </div>
+          </div>
+
+          <div>
+              <img src="images/developers/toni_interview.png" alt="slide2" />
+            <div class="slide-left">
+              <h1 class="slide-heading">Developers - Toni Camacho</h1>
+              <p class="info">Hi Toni, please tell us about your career path. In the games industry I started porting videogames for a few...</p>
+              <p><a href="html/developers_tonicamacho.html" class="readmore">read more</a></p>
+            </div>
+          </div>
+
+        </div> 
+      </div>
+    </div>
+ 
+    <!-- FOOTER -->
+  <footer class="group">
+    <img id="line-decoration-bottom" src="images/frame.png" alt="line-decoration2" />
+    <nav id="footer-left">
+      <ul>
+          <li class="youtube"><a href="https://www.youtube.com/user/digitalchocolategame" target="_blank" title="YouTube">Facebook</a></li>
+          <li class="twitter"><a href="https://twitter.com/DChocGames" target="_blank" title="Twitter">Twitter</a></li>
+          <li class="facebook"><a href="https://www.facebook.com/DChocGames" target="_blank" title="Facebook">YouTube</a></li>
+      </ul>
+    </nav>
+      
+    <div id="footer-right">
+      <ul>
+        <li><a href="html/aboutus.html">About Us</a></li>
+        <li><a href="html/archives.html">Archives</a></li>
+      </ul>
+    </div>
+
+    <div id="footer-bottom">
+      <p>Copyright by <a href="http://www.digitalchocolate.com/copyright/" target="_blank" title="Copyright">Digital Chocolate, Inc.</a> <br>
+    </div>
+  </footer>
+
+    <script>
+    $(function(){
+      $('#slides').slides({
+        preload: true,
+        generateNext: false, 
+        preloadImage: 'images/loading.gif',
+        play: 8000,
+        pause: 2500,
+        hoverPause: true
+      });
+    });
+    </script>
+
+</body>
+</html>

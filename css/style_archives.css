@@ -1,0 +1,10 @@
+@import url('style.css');
+@import url('style_entries.css');
+@import url('style_developers.css');
+@import url('style_aboutus.css');
+
+.theme{
+	font-size: 16pt;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}

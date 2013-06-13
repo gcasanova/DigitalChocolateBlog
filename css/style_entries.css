@@ -1,0 +1,92 @@
+@import url('style.css');
+
+/* MAIN CONTENT */
+#entry-heading{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 2px;
+	text-align: center;
+}
+div[id^="page"]{
+	position: absolute;
+	left: 45px;
+	width: 90%;
+	text-align: left;
+}
+div[id^="page"] p{
+	font-size: 13pt;
+	line-height: 1.2;
+}
+div[id^="page"] p:first-letter{
+	padding-left: 6px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+@-moz-document url-prefix(){
+     div[id^="page"] p {font-size: 12pt;}
+}
+span {
+	font-weight: bold;
+}
+.column div{
+	padding: 10px;
+}
+img[class^="preview"]{
+	border: 2px solid #555555;
+	width: 200px;
+	height: 100px;
+	padding: 5px;
+}
+.preview-right{
+	float:right; 
+	margin:1em 0 1em 1em;
+}
+.preview-left{
+	float:left; 
+	margin:1em 1em 1em 0;
+}
+.modalDialog-Images{
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog-Images:target{
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog-Images > div {
+	display: inline-block;
+	position: absolute;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.modalDialog-Images img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#openFirstImage > div {
+	margin: 4% 24%;
+}
+#openSecondImage > div {
+	margin: 4% 28%;
+}
+#openThirdImage > div {
+	margin: 5% 22%;
+}
+/* END MAIN CONTENT*/
